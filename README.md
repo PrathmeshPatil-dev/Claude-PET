@@ -17,21 +17,21 @@
 
 ---
 
-## `> whoami`
+## 🎯 `> whoami`
 
 **Claude Pet** is the Claude Code mascot, rebuilt as a **real 3D model** (the pixel sprite extruded into bevelled blocks) that lives on your Windows desktop.
 
 It roams, climbs onto your windows, rides them when you drag them, and can do things on your PC when you type plain sentences. Most importantly, it **snaps your screen and hands it to Claude Code**: pick a region, type your question, and a real `claude` session opens in the right folder. The pet relays the replies in its speech bubble.
 
-> 🔒 **Nothing you type is ever run as a shell command.** The parser can only pick one of a fixed set of actions.
+> 🔐 **Nothing you type is ever run as a shell command.** The parser can only pick one of a fixed set of actions.
 
 ---
 
-## `> metrics`
+## ⚡ `> metrics`
 
 <div align="center">
 
-| ⚡ Signal | 📊 Value |
+| Signal | Value |
 |:--|:--|
 | Commands understood | **36** kinds, parsed from plain English |
 | Unit tests | **87 / 87 passing** (xUnit) |
@@ -45,7 +45,7 @@ It roams, climbs onto your windows, rides them when you drag them, and can do th
 
 ---
 
-## `> features`
+## 🗂️ `> features`
 
 <table>
 <tr>
@@ -62,7 +62,7 @@ It roams, climbs onto your windows, rides them when you drag them, and can do th
 </td>
 <td width="50%" valign="top">
 
-### 🪟 Windows as ground
+### 🖥️ Windows as ground
 - Window title bars are **ledges**: thrown, it lands on the first one
 - Walks along them, **rides** a window you drag
 - Falls when the window goes, teeters at the edge
@@ -73,7 +73,7 @@ It roams, climbs onto your windows, rides them when you drag them, and can do th
 <tr>
 <td valign="top">
 
-### 🖥️ PC actions
+### ⚙️ PC actions
 - `open terminal [in this folder / mes3 / a path]`
 - `open vs code [in ...]` · `open antigravity`
 - `open folder downloads` · named links
@@ -82,7 +82,7 @@ It roams, climbs onto your windows, rides them when you drag them, and can do th
 </td>
 <td valign="top">
 
-### 🎭 Personality
+### 🎮 Personality
 - `wave` `cheer` `dash` `climb` `tour` `sit` `sleep`
 - `backflip` `front flip` `spin` `dance` `stretch` `trip`
 - `follow me` · `draw` · `summon [20/30]` friends
@@ -95,7 +95,7 @@ It roams, climbs onto your windows, rides them when you drag them, and can do th
 
 ---
 
-## `> architecture`
+## 🧱 `> architecture`
 
 ```mermaid
 flowchart LR
@@ -114,7 +114,7 @@ flowchart LR
 
 ---
 
-## `> boot`
+## 🚀 `> boot`
 
 **Requirements:** Windows 10/11 · [.NET 9 SDK](https://dotnet.microsoft.com/download) · [Windows Terminal](https://aka.ms/terminal) · [Claude Code](https://docs.claude.com/en/docs/claude-code) logged in (for snaps)
 
