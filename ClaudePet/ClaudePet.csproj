@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <!-- WinForms only for the tray icon and the screen capture. -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- Per-monitor DPI, so screen capture and window rectangles are in real pixels. -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- WinForms' global usings clash with WPF's (Application, Point, Color...): name them where used. -->
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+    <InternalsVisibleTo Include="ClaudePet.Tests" />
+  </ItemGroup>
+
+</Project>
